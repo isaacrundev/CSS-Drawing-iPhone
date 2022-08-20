@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!Phone</title>
+    <style>
+      :root {
+        --primary-bg: rgba(44, 62, 80, 1);
+        --secondary-bg: rgba(0, 0, 0, 0.9);
+        --box-shadow-color-1: gold;
+        --box-shadow-color-2: rgba(149, 165, 166, 0.1);
+        --box-shadow-color-3: #ecf0f1;
+        --phone-width: 350px;
+        --phone-height: 700px;
+      }
+      body {
+        background-color: var(--primary-bg);
+      }
+      #bg {
+        background: var(--secondary-bg);
+        width: 450px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #outer_box {
+        background: var(--secondary-bg);
+        width: var(--phone-width);
+        height: var(--phone-height);
+        border-radius: 20px;
+        box-shadow: -1px -1px 1px 1px var(--box-shadow-color-1),
+          inset 1px 1px 2px 2px var(--box-shadow-color-2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #inner_box {
+        background: var(--primary-bg);
+        width: 320px;
+        height: 580px;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #home_button {
+        background: var(--secondary-bg);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: -1px -1px 1px 1px var(--box-shadow-color-1),
+          1px 1px 1px 1px var(--box-shadow-color-3);
+        position: absolute;
+        top: 670px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #line {
+        background: var(--primary-bg);
+        width: 50px;
+        height: 7px;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+      }
+      #dot_left {
+        background: var(--primary-bg);
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 26px;
+        left: 133px;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+      }
+      #dot_right {
+        background: var(--primary-bg);
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg">
+      <div id="outer_box">
+        <div id="line"></div>
+        <div id="dot_left"></div>
+        <div id="dot_right"></div>
+        <div id="home_button"></div>
+        <div id="inner_box"></div>
+      </div>
+    </div>
+  </body>
+</html>
